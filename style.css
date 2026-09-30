@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef5ff,
+            #f8fbff
+        );
+
+    color: #172033;
+
+}
+
+
+.container {
+
+    width: min(
+        900px,
+        92%
+    );
+
+    margin: auto;
+
+    padding:
+        40px 0
+        70px;
+
+}
+
+
+/* -------------------------
+Hero
+------------------------- */
+
+
+.hero {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+}
+
+
+.hero h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            32px,
+            6vw,
+            52px
+        );
+
+}
+
+
+.hero p {
+
+    color: #667085;
+
+    line-height: 1.6;
+
+}
+
+
+/* -------------------------
+Cards
+------------------------- */
+
+
+.card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border:
+        1px solid
+        #e2e8f0;
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            0,
+            0,
+            0,
+            0.07
+        );
+
+}
+
+
+/* -------------------------
+Labels
+------------------------- */
+
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* -------------------------
+Inputs
+------------------------- */
+
+
+select,
+textarea,
+input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border:
+        1px solid
+        #cbd5e1;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    outline: none;
+
+}
+
+
+select:focus,
+textarea:focus,
+input:focus {
+
+    border-color:
+        #2563eb;
+
+}
+
+
+/* -------------------------
+Main Button
+------------------------- */
+
+
+#submitButton {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background:
+        #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+#submitButton:hover {
+
+    opacity: 0.9;
+
+}
+
+
+#submitButton:disabled {
+
+    opacity: 0.6;
+
+    cursor: wait;
+
+}
+
+
+/* -------------------------
+Status
+------------------------- */
+
+
+.status {
+
+    margin-top: 12px;
+
+    color: #667085;
+
+    min-height: 24px;
+
+}
+
+
+/* -------------------------
+Answer
+------------------------- */
+
+
+.answer {
+
+    line-height: 1.8;
+
+}
+
+
+/* -------------------------
+Quiz
+------------------------- */
+
+
+.quiz-question {
+
+    padding: 18px;
+
+    border:
+        1px solid
+        #e2e8f0;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.quiz-question h3 {
+
+    margin-top: 0;
+
+    line-height: 1.5;
+
+}
+
+
+.options {
+
+    display: grid;
+
+    gap: 10px;
+
+}
+
+
+.option {
+
+    text-align: left;
+
+    background:
+        #f8fafc;
+
+    border:
+        1px solid
+        #dbe2ea;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+
+.option:hover {
+
+    background:
+        #eef5ff;
+
+}
+
+
+.option:disabled {
+
+    cursor: default;
+
+    opacity: 0.8;
+
+}
+
+
+/* -------------------------
+Feedback
+------------------------- */
+
+
+.feedback {
+
+    font-weight: bold;
+
+    line-height: 1.5;
+
+}
+
+
+.correct {
+
+    color: #15803d;
+
+}
+
+
+.incorrect {
+
+    color: #dc2626;
+
+}
+
+
+/* -------------------------
+Error
+------------------------- */
+
+
+.error {
+
+    background:
+        #fff1f2;
+
+    border:
+        1px solid
+        #fecdd3;
+
+    color:
+        #be123c;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+}
+
+
+/* -------------------------
+Utility
+------------------------- */
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+/* -------------------------
+Mobile
+------------------------- */
+
+
+@media (
+    max-width: 600px
+) {
+
+    .container {
+
+        width: 94%;
+
+        padding-top: 25px;
+
+    }
+
+
+    .card {
+
+        padding: 18px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 32px;
+
+    }
+
+}
